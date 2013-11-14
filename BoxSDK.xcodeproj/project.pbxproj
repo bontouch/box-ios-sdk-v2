@@ -7,14 +7,59 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9400B0BB17FB8BE00077D4E7 /* BoxUsersRequestBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 9400B0B917FB8BE00077D4E7 /* BoxUsersRequestBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A0015E11834C49A00054040 /* NSString+BoxURLHelper.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4FAD97C172CE2C50052AD11 /* NSString+BoxURLHelper.h */; };
+		2A0015E21834C49A00054040 /* NSURL+BoxURLHelper.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4FAD97E172CE2C50052AD11 /* NSURL+BoxURLHelper.h */; };
+		2A0015E31834C49A00054040 /* NSString+BoxAdditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C5C11A3D175DA92E0001EC88 /* NSString+BoxAdditions.h */; };
+		2A0015E41834C49A00054040 /* UIImage+BoxAdditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C5C11A42175DACCE0001EC88 /* UIImage+BoxAdditions.h */; };
+		2A0015E51834C49A00054040 /* BoxItem+BoxAdditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C58BC260175EDD670071BF37 /* BoxItem+BoxAdditions.h */; };
+		2A0015E61834C49A00054040 /* NSJSONSerialization+BoxAdditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AF153B1117C346D6008D636C /* NSJSONSerialization+BoxAdditions.h */; };
+		2A0015E71834C49A00054040 /* BoxODRefreshControl.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C58BC266175EDF7C0071BF37 /* BoxODRefreshControl.h */; };
+		2A0015E81834C49A00054040 /* BoxISO8601DateFormatter.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4FAD982172CE2C50052AD11 /* BoxISO8601DateFormatter.h */; };
+		2A0015E91834C49A00054040 /* BoxFolderPickerHelper.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C5152CF817541B66007A5C0A /* BoxFolderPickerHelper.h */; };
+		2A0015EA1834C49A00054040 /* BoxFolderPickerTableViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C5152CFA17541B66007A5C0A /* BoxFolderPickerTableViewController.h */; };
+		2A0015EB1834C49A00054040 /* BoxFolderPickerViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C5152CFC17541B66007A5C0A /* BoxFolderPickerViewController.h */; };
+		2A0015EC1834C49A00054040 /* BoxFolderPickerCell.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C54BBF6B17584F9200F5DAD8 /* BoxFolderPickerCell.h */; };
+		2A0015ED1834C49A00054040 /* BoxFolderPickerNavigationController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4081E311758832C00F6D6AA /* BoxFolderPickerNavigationController.h */; };
+		2A0015EE1834C49A00054040 /* BoxCollection.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4FAD987172CE2C50052AD11 /* BoxCollection.h */; };
+		2A0015EF1834C49A00054040 /* BoxFile.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4FAD989172CE2C50052AD11 /* BoxFile.h */; };
+		2A0015F01834C49A00054040 /* BoxFolder.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4FAD98B172CE2C50052AD11 /* BoxFolder.h */; };
+		2A0015F11834C49A00054040 /* BoxItem.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4FAD98D172CE2C50052AD11 /* BoxItem.h */; };
+		2A0015F21834C49A00054040 /* BoxModel.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4FAD98F172CE2C50052AD11 /* BoxModel.h */; };
+		2A0015F31834C49A00054040 /* BoxUser.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4FAD991172CE2C50052AD11 /* BoxUser.h */; };
+		2A0015F41834C49A00054040 /* BoxWebLink.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4FAD993172CE2C50052AD11 /* BoxWebLink.h */; };
+		2A0015F51834C49A00054040 /* BoxModelComparators.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AF6E06A617AE66AF0039F17D /* BoxModelComparators.h */; };
+		2A0015F61834C49A00054040 /* BoxAuthorizationViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4FAD996172CE2C50052AD11 /* BoxAuthorizationViewController.h */; };
+		2A0015F71834C49A00054040 /* BoxOAuth2Session.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4FAD998172CE2C50052AD11 /* BoxOAuth2Session.h */; };
+		2A0015F81834C49A00054040 /* BoxSerialOAuth2Session.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4FAD99A172CE2C50052AD11 /* BoxSerialOAuth2Session.h */; };
+		2A0015F91834C49A00054040 /* BoxParallelOAuth2Session.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4CA6F5C173F1C750089680F /* BoxParallelOAuth2Session.h */; };
+		2A0015FA1834C49A00054040 /* BoxAPIAuthenticatedOperation.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4FAD99D172CE2C50052AD11 /* BoxAPIAuthenticatedOperation.h */; };
+		2A0015FB1834C49A00054040 /* BoxAPIDataOperation.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4FAD99F172CE2C50052AD11 /* BoxAPIDataOperation.h */; };
+		2A0015FC1834C49A00054040 /* BoxAPIJSONOperation.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4FAD9A1172CE2C50052AD11 /* BoxAPIJSONOperation.h */; };
+		2A0015FD1834C49A00054040 /* BoxAPIMultipartToJSONOperation.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4FAD9A3172CE2C50052AD11 /* BoxAPIMultipartToJSONOperation.h */; };
+		2A0015FE1834C49A00054040 /* BoxAPIOAuth2ToJSONOperation.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4FAD9A5172CE2C50052AD11 /* BoxAPIOAuth2ToJSONOperation.h */; };
+		2A0015FF1834C49A00054040 /* BoxAPIOperation.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4FAD9A7172CE2C50052AD11 /* BoxAPIOperation.h */; };
+		2A0016001834C49A00054040 /* BoxAPIQueueManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4FAD9AA172CE2C50052AD11 /* BoxAPIQueueManager.h */; };
+		2A0016011834C49A00054040 /* BoxSerialAPIQueueManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4FAD9AC172CE2C50052AD11 /* BoxSerialAPIQueueManager.h */; };
+		2A0016021834C49A00054040 /* BoxParallelAPIQueueManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4CA6F54173F13C10089680F /* BoxParallelAPIQueueManager.h */; };
+		2A0016031834C49A00054040 /* BoxUsersRequestBuilder.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9400B0B917FB8BE00077D4E7 /* BoxUsersRequestBuilder.h */; };
+		2A0016041834C49A00054040 /* BoxAPIRequestBuilder.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4FAD9AF172CE2C50052AD11 /* BoxAPIRequestBuilder.h */; };
+		2A0016051834C49A00054040 /* BoxFilesRequestBuilder.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4FAD9B1172CE2C50052AD11 /* BoxFilesRequestBuilder.h */; };
+		2A0016061834C49A00054040 /* BoxFoldersRequestBuilder.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4FAD9B3172CE2C50052AD11 /* BoxFoldersRequestBuilder.h */; };
+		2A0016071834C49A00054040 /* BoxItemsRequestBuilder.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4FAD9B5172CE2C50052AD11 /* BoxItemsRequestBuilder.h */; };
+		2A0016081834C49A00054040 /* BoxSharedObjectBuilder.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4FAD9B7172CE2C50052AD11 /* BoxSharedObjectBuilder.h */; };
+		2A0016091834C49A00054040 /* BoxUsersResourceManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9400B0BD17FB8BEA0077D4E7 /* BoxUsersResourceManager.h */; };
+		2A00160A1834C49A00054040 /* BoxAPIResourceManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4FAD9BA172CE2C50052AD11 /* BoxAPIResourceManager.h */; };
+		2A00160B1834C49A00054040 /* BoxFilesResourceManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4FAD9BC172CE2C50052AD11 /* BoxFilesResourceManager.h */; };
+		2A00160C1834C49A00054040 /* BoxFoldersResourceManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4FAD9BE172CE2C50052AD11 /* BoxFoldersResourceManager.h */; };
+		2A00160D1834C49A00054040 /* BoxSDK.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E470434316D41DC500FED29A /* BoxSDK.h */; };
+		2A00160E1834C49A00054040 /* BoxSDKErrors.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4F4693517264439000CAD86 /* BoxSDKErrors.h */; };
+		2A00160F1834C49A00054040 /* BoxSDKConstants.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4CF273516DC4A5100F5979E /* BoxSDKConstants.h */; };
+		2A0016101834C49A00054040 /* BoxLog.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4C3289716D6F447002DC905 /* BoxLog.h */; };
 		9400B0BC17FB8BE00077D4E7 /* BoxUsersRequestBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 9400B0BA17FB8BE00077D4E7 /* BoxUsersRequestBuilder.m */; };
-		9400B0BF17FB8BEA0077D4E7 /* BoxUsersResourceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9400B0BD17FB8BEA0077D4E7 /* BoxUsersResourceManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9400B0C017FB8BEA0077D4E7 /* BoxUsersResourceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9400B0BE17FB8BEA0077D4E7 /* BoxUsersResourceManager.m */; };
 		9400B0C317FB8C470077D4E7 /* BoxUsersRequestBuilderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9400B0C217FB8C470077D4E7 /* BoxUsersRequestBuilderTests.m */; };
 		9400B0C617FB8C600077D4E7 /* BoxUserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9400B0C517FB8C600077D4E7 /* BoxUserTests.m */; };
 		9400B0C917FB8C6F0077D4E7 /* BoxUsersResourceManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9400B0C717FB8C6F0077D4E7 /* BoxUsersResourceManagerTests.m */; };
-		AF153B1317C346D6008D636C /* NSJSONSerialization+BoxAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = AF153B1117C346D6008D636C /* NSJSONSerialization+BoxAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AF153B1417C346D6008D636C /* NSJSONSerialization+BoxAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AF153B1217C346D6008D636C /* NSJSONSerialization+BoxAdditions.m */; };
 		AF153B1717C34D84008D636C /* NSJSONSerialization+BoxAdditionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF153B1617C34D84008D636C /* NSJSONSerialization+BoxAdditionsTests.m */; };
 		AF6534B217CF27DB00C27DFD /* NSJSONSerialization+BoxAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AF153B1217C346D6008D636C /* NSJSONSerialization+BoxAdditions.m */; };
@@ -23,25 +68,16 @@
 		AF6534B517CF280000C27DFD /* BoxModelComparators.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6E06A717AE66AF0039F17D /* BoxModelComparators.m */; };
 		AF6534B617CF281600C27DFD /* NSJSONSerialization+BoxAdditionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF153B1617C34D84008D636C /* NSJSONSerialization+BoxAdditionsTests.m */; };
 		AF6534B717CF281600C27DFD /* BoxModelComparatorsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6E06AB17AE6C240039F17D /* BoxModelComparatorsTest.m */; };
-		AF6E06A817AE66AF0039F17D /* BoxModelComparators.h in Headers */ = {isa = PBXBuildFile; fileRef = AF6E06A617AE66AF0039F17D /* BoxModelComparators.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AF6E06A917AE66AF0039F17D /* BoxModelComparators.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6E06A717AE66AF0039F17D /* BoxModelComparators.m */; };
 		AF6E06AC17AE6C240039F17D /* BoxModelComparatorsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6E06AB17AE6C240039F17D /* BoxModelComparatorsTest.m */; };
-		C5152CFE17541B66007A5C0A /* BoxFolderPickerHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = C5152CF817541B66007A5C0A /* BoxFolderPickerHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C5152CFF17541B66007A5C0A /* BoxFolderPickerHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C5152CF917541B66007A5C0A /* BoxFolderPickerHelper.m */; };
-		C5152D0017541B66007A5C0A /* BoxFolderPickerTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C5152CFA17541B66007A5C0A /* BoxFolderPickerTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C5152D0117541B66007A5C0A /* BoxFolderPickerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5152CFB17541B66007A5C0A /* BoxFolderPickerTableViewController.m */; };
-		C5152D0217541B66007A5C0A /* BoxFolderPickerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C5152CFC17541B66007A5C0A /* BoxFolderPickerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C5152D0317541B66007A5C0A /* BoxFolderPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5152CFD17541B66007A5C0A /* BoxFolderPickerViewController.m */; };
-		C54BBF6D17584F9300F5DAD8 /* BoxFolderPickerCell.h in Headers */ = {isa = PBXBuildFile; fileRef = C54BBF6B17584F9200F5DAD8 /* BoxFolderPickerCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C54BBF6E17584F9300F5DAD8 /* BoxFolderPickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C54BBF6C17584F9200F5DAD8 /* BoxFolderPickerCell.m */; };
 		C54BBF701758539E00F5DAD8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C54BBF6F1758539E00F5DAD8 /* QuartzCore.framework */; };
-		C58BC262175EDD670071BF37 /* BoxItem+BoxAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C58BC260175EDD670071BF37 /* BoxItem+BoxAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C58BC263175EDD670071BF37 /* BoxItem+BoxAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C58BC261175EDD670071BF37 /* BoxItem+BoxAdditions.m */; };
-		C58BC268175EDF7C0071BF37 /* BoxODRefreshControl.h in Headers */ = {isa = PBXBuildFile; fileRef = C58BC266175EDF7C0071BF37 /* BoxODRefreshControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C58BC269175EDF7C0071BF37 /* BoxODRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = C58BC267175EDF7C0071BF37 /* BoxODRefreshControl.m */; settings = {COMPILER_FLAGS = "-w"; }; };
-		C5C11A3F175DA92E0001EC88 /* NSString+BoxAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C5C11A3D175DA92E0001EC88 /* NSString+BoxAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C5C11A40175DA92E0001EC88 /* NSString+BoxAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C11A3E175DA92E0001EC88 /* NSString+BoxAdditions.m */; };
-		C5C11A44175DACCE0001EC88 /* UIImage+BoxAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C5C11A42175DACCE0001EC88 /* UIImage+BoxAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C5C11A45175DACCE0001EC88 /* UIImage+BoxAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C11A43175DACCE0001EC88 /* UIImage+BoxAdditions.m */; };
 		E4081D8F1758728900F6D6AA /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4081D8E1758728900F6D6AA /* CoreFoundation.framework */; };
 		E4081D951758728900F6D6AA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E4081D931758728900F6D6AA /* InfoPlist.strings */; };
@@ -113,16 +149,12 @@
 		E4081E211758732800F6D6AA /* xlsx.png in Resources */ = {isa = PBXBuildFile; fileRef = E4081DDD1758732800F6D6AA /* xlsx.png */; };
 		E4081E221758732800F6D6AA /* xml.png in Resources */ = {isa = PBXBuildFile; fileRef = E4081DDE1758732800F6D6AA /* xml.png */; };
 		E4081E231758732800F6D6AA /* xml@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E4081DDF1758732800F6D6AA /* xml@2x.png */; };
-		E4081E331758832C00F6D6AA /* BoxFolderPickerNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = E4081E311758832C00F6D6AA /* BoxFolderPickerNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E4081E341758832C00F6D6AA /* BoxFolderPickerNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4081E321758832C00F6D6AA /* BoxFolderPickerNavigationController.m */; };
 		E4081E4C175EF18800F6D6AA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C54BBF6F1758539E00F5DAD8 /* QuartzCore.framework */; };
 		E4081E4E175EF1B900F6D6AA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4081E4D175EF1B900F6D6AA /* CoreGraphics.framework */; };
 		E40C7A49174BFDB500477760 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E40C7A48174BFDB500477760 /* Security.framework */; };
 		E40C7A4A174BFDE400477760 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E40C7A48174BFDB500477760 /* Security.framework */; };
 		E44A95B116E21C5100356ADA /* BoxSDKConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = E44A95B016E21C5100356ADA /* BoxSDKConstants.m */; };
-		E44A95D116E221B400356ADA /* BoxSDKConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = E4CF273516DC4A5100F5979E /* BoxSDKConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E44A95D216E221B400356ADA /* BoxSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = E470434316D41DC500FED29A /* BoxSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E44A95D616E221B400356ADA /* BoxLog.h in Headers */ = {isa = PBXBuildFile; fileRef = E4C3289716D6F447002DC905 /* BoxLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E470433F16D41DC500FED29A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E470433E16D41DC500FED29A /* Foundation.framework */; };
 		E470434616D41DC500FED29A /* BoxSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = E470434516D41DC500FED29A /* BoxSDK.m */; };
 		E470434E16D41DC500FED29A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E470434D16D41DC500FED29A /* SenTestingKit.framework */; };
@@ -137,70 +169,38 @@
 		E479B2961804C06800F8D79C /* BoxUserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9400B0C517FB8C600077D4E7 /* BoxUserTests.m */; };
 		E479B2971804C06800F8D79C /* BoxUsersRequestBuilderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9400B0C217FB8C470077D4E7 /* BoxUsersRequestBuilderTests.m */; };
 		E479B2981804C06800F8D79C /* BoxUsersResourceManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9400B0C717FB8C6F0077D4E7 /* BoxUsersResourceManagerTests.m */; };
-		E4CA6F56173F13C10089680F /* BoxParallelAPIQueueManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E4CA6F54173F13C10089680F /* BoxParallelAPIQueueManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E4CA6F57173F13C10089680F /* BoxParallelAPIQueueManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CA6F55173F13C10089680F /* BoxParallelAPIQueueManager.m */; };
-		E4CA6F5E173F1C750089680F /* BoxParallelOAuth2Session.h in Headers */ = {isa = PBXBuildFile; fileRef = E4CA6F5C173F1C750089680F /* BoxParallelOAuth2Session.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E4CA6F5F173F1C750089680F /* BoxParallelOAuth2Session.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CA6F5D173F1C750089680F /* BoxParallelOAuth2Session.m */; };
 		E4D5085816E80A2A001CE50A /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D5085616E80667001CE50A /* libOCMock.a */; };
-		E4F4693617264EBE000CAD86 /* BoxSDKErrors.h in Headers */ = {isa = PBXBuildFile; fileRef = E4F4693517264439000CAD86 /* BoxSDKErrors.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E4F4693B17268023000CAD86 /* BoxSDKTestsHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F4693A17268023000CAD86 /* BoxSDKTestsHelpers.m */; };
-		E4FAD9C0172CE2C50052AD11 /* NSString+BoxURLHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = E4FAD97C172CE2C50052AD11 /* NSString+BoxURLHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E4FAD9C1172CE2C50052AD11 /* NSString+BoxURLHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E4FAD97D172CE2C50052AD11 /* NSString+BoxURLHelper.m */; };
-		E4FAD9C2172CE2C50052AD11 /* NSURL+BoxURLHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = E4FAD97E172CE2C50052AD11 /* NSURL+BoxURLHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E4FAD9C3172CE2C50052AD11 /* NSURL+BoxURLHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E4FAD97F172CE2C50052AD11 /* NSURL+BoxURLHelper.m */; };
-		E4FAD9C4172CE2C50052AD11 /* BoxISO8601DateFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = E4FAD982172CE2C50052AD11 /* BoxISO8601DateFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E4FAD9C5172CE2C50052AD11 /* BoxISO8601DateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = E4FAD983172CE2C50052AD11 /* BoxISO8601DateFormatter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		E4FAD9C6172CE2C50052AD11 /* BoxCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = E4FAD987172CE2C50052AD11 /* BoxCollection.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E4FAD9C7172CE2C50052AD11 /* BoxCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = E4FAD988172CE2C50052AD11 /* BoxCollection.m */; };
-		E4FAD9C8172CE2C50052AD11 /* BoxFile.h in Headers */ = {isa = PBXBuildFile; fileRef = E4FAD989172CE2C50052AD11 /* BoxFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E4FAD9C9172CE2C50052AD11 /* BoxFile.m in Sources */ = {isa = PBXBuildFile; fileRef = E4FAD98A172CE2C50052AD11 /* BoxFile.m */; };
-		E4FAD9CA172CE2C50052AD11 /* BoxFolder.h in Headers */ = {isa = PBXBuildFile; fileRef = E4FAD98B172CE2C50052AD11 /* BoxFolder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E4FAD9CB172CE2C50052AD11 /* BoxFolder.m in Sources */ = {isa = PBXBuildFile; fileRef = E4FAD98C172CE2C50052AD11 /* BoxFolder.m */; };
-		E4FAD9CC172CE2C50052AD11 /* BoxItem.h in Headers */ = {isa = PBXBuildFile; fileRef = E4FAD98D172CE2C50052AD11 /* BoxItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E4FAD9CD172CE2C50052AD11 /* BoxItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E4FAD98E172CE2C50052AD11 /* BoxItem.m */; };
-		E4FAD9CE172CE2C50052AD11 /* BoxModel.h in Headers */ = {isa = PBXBuildFile; fileRef = E4FAD98F172CE2C50052AD11 /* BoxModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E4FAD9CF172CE2C50052AD11 /* BoxModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E4FAD990172CE2C50052AD11 /* BoxModel.m */; };
-		E4FAD9D0172CE2C50052AD11 /* BoxUser.h in Headers */ = {isa = PBXBuildFile; fileRef = E4FAD991172CE2C50052AD11 /* BoxUser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E4FAD9D1172CE2C50052AD11 /* BoxUser.m in Sources */ = {isa = PBXBuildFile; fileRef = E4FAD992172CE2C50052AD11 /* BoxUser.m */; };
-		E4FAD9D2172CE2C50052AD11 /* BoxWebLink.h in Headers */ = {isa = PBXBuildFile; fileRef = E4FAD993172CE2C50052AD11 /* BoxWebLink.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E4FAD9D3172CE2C50052AD11 /* BoxWebLink.m in Sources */ = {isa = PBXBuildFile; fileRef = E4FAD994172CE2C50052AD11 /* BoxWebLink.m */; };
-		E4FAD9D4172CE2C50052AD11 /* BoxAuthorizationViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E4FAD996172CE2C50052AD11 /* BoxAuthorizationViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E4FAD9D5172CE2C50052AD11 /* BoxAuthorizationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4FAD997172CE2C50052AD11 /* BoxAuthorizationViewController.m */; };
-		E4FAD9D6172CE2C50052AD11 /* BoxOAuth2Session.h in Headers */ = {isa = PBXBuildFile; fileRef = E4FAD998172CE2C50052AD11 /* BoxOAuth2Session.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E4FAD9D7172CE2C50052AD11 /* BoxOAuth2Session.m in Sources */ = {isa = PBXBuildFile; fileRef = E4FAD999172CE2C50052AD11 /* BoxOAuth2Session.m */; };
-		E4FAD9D8172CE2C50052AD11 /* BoxSerialOAuth2Session.h in Headers */ = {isa = PBXBuildFile; fileRef = E4FAD99A172CE2C50052AD11 /* BoxSerialOAuth2Session.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E4FAD9D9172CE2C50052AD11 /* BoxSerialOAuth2Session.m in Sources */ = {isa = PBXBuildFile; fileRef = E4FAD99B172CE2C50052AD11 /* BoxSerialOAuth2Session.m */; };
-		E4FAD9DA172CE2C50052AD11 /* BoxAPIAuthenticatedOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = E4FAD99D172CE2C50052AD11 /* BoxAPIAuthenticatedOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E4FAD9DB172CE2C50052AD11 /* BoxAPIAuthenticatedOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E4FAD99E172CE2C50052AD11 /* BoxAPIAuthenticatedOperation.m */; };
-		E4FAD9DC172CE2C50052AD11 /* BoxAPIDataOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = E4FAD99F172CE2C50052AD11 /* BoxAPIDataOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E4FAD9DD172CE2C50052AD11 /* BoxAPIDataOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E4FAD9A0172CE2C50052AD11 /* BoxAPIDataOperation.m */; };
-		E4FAD9DE172CE2C50052AD11 /* BoxAPIJSONOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = E4FAD9A1172CE2C50052AD11 /* BoxAPIJSONOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E4FAD9DF172CE2C50052AD11 /* BoxAPIJSONOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E4FAD9A2172CE2C50052AD11 /* BoxAPIJSONOperation.m */; };
-		E4FAD9E0172CE2C50052AD11 /* BoxAPIMultipartToJSONOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = E4FAD9A3172CE2C50052AD11 /* BoxAPIMultipartToJSONOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E4FAD9E1172CE2C50052AD11 /* BoxAPIMultipartToJSONOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E4FAD9A4172CE2C50052AD11 /* BoxAPIMultipartToJSONOperation.m */; };
-		E4FAD9E2172CE2C50052AD11 /* BoxAPIOAuth2ToJSONOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = E4FAD9A5172CE2C50052AD11 /* BoxAPIOAuth2ToJSONOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E4FAD9E3172CE2C50052AD11 /* BoxAPIOAuth2ToJSONOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E4FAD9A6172CE2C50052AD11 /* BoxAPIOAuth2ToJSONOperation.m */; };
-		E4FAD9E4172CE2C50052AD11 /* BoxAPIOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = E4FAD9A7172CE2C50052AD11 /* BoxAPIOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E4FAD9E5172CE2C50052AD11 /* BoxAPIOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E4FAD9A8172CE2C50052AD11 /* BoxAPIOperation.m */; };
-		E4FAD9E6172CE2C50052AD11 /* BoxAPIQueueManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E4FAD9AA172CE2C50052AD11 /* BoxAPIQueueManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E4FAD9E7172CE2C50052AD11 /* BoxAPIQueueManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E4FAD9AB172CE2C50052AD11 /* BoxAPIQueueManager.m */; };
-		E4FAD9E8172CE2C50052AD11 /* BoxSerialAPIQueueManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E4FAD9AC172CE2C50052AD11 /* BoxSerialAPIQueueManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E4FAD9E9172CE2C50052AD11 /* BoxSerialAPIQueueManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E4FAD9AD172CE2C50052AD11 /* BoxSerialAPIQueueManager.m */; };
-		E4FAD9EA172CE2C50052AD11 /* BoxAPIRequestBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = E4FAD9AF172CE2C50052AD11 /* BoxAPIRequestBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E4FAD9EB172CE2C50052AD11 /* BoxAPIRequestBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = E4FAD9B0172CE2C50052AD11 /* BoxAPIRequestBuilder.m */; };
-		E4FAD9EC172CE2C50052AD11 /* BoxFilesRequestBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = E4FAD9B1172CE2C50052AD11 /* BoxFilesRequestBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E4FAD9ED172CE2C50052AD11 /* BoxFilesRequestBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = E4FAD9B2172CE2C50052AD11 /* BoxFilesRequestBuilder.m */; };
-		E4FAD9EE172CE2C50052AD11 /* BoxFoldersRequestBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = E4FAD9B3172CE2C50052AD11 /* BoxFoldersRequestBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E4FAD9EF172CE2C50052AD11 /* BoxFoldersRequestBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = E4FAD9B4172CE2C50052AD11 /* BoxFoldersRequestBuilder.m */; };
-		E4FAD9F0172CE2C50052AD11 /* BoxItemsRequestBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = E4FAD9B5172CE2C50052AD11 /* BoxItemsRequestBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E4FAD9F1172CE2C50052AD11 /* BoxItemsRequestBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = E4FAD9B6172CE2C50052AD11 /* BoxItemsRequestBuilder.m */; };
-		E4FAD9F2172CE2C50052AD11 /* BoxSharedObjectBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = E4FAD9B7172CE2C50052AD11 /* BoxSharedObjectBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E4FAD9F3172CE2C50052AD11 /* BoxSharedObjectBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = E4FAD9B8172CE2C50052AD11 /* BoxSharedObjectBuilder.m */; };
-		E4FAD9F4172CE2C50052AD11 /* BoxAPIResourceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E4FAD9BA172CE2C50052AD11 /* BoxAPIResourceManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E4FAD9F5172CE2C50052AD11 /* BoxAPIResourceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E4FAD9BB172CE2C50052AD11 /* BoxAPIResourceManager.m */; };
-		E4FAD9F6172CE2C50052AD11 /* BoxFilesResourceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E4FAD9BC172CE2C50052AD11 /* BoxFilesResourceManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E4FAD9F7172CE2C50052AD11 /* BoxFilesResourceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E4FAD9BD172CE2C50052AD11 /* BoxFilesResourceManager.m */; };
-		E4FAD9F8172CE2C50052AD11 /* BoxFoldersResourceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E4FAD9BE172CE2C50052AD11 /* BoxFoldersResourceManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E4FAD9F9172CE2C50052AD11 /* BoxFoldersResourceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E4FAD9BF172CE2C50052AD11 /* BoxFoldersResourceManager.m */; };
 		E4FADA1C172CE2DF0052AD11 /* NSString+BoxURLHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4FAD9FC172CE2DF0052AD11 /* NSString+BoxURLHelperTests.m */; };
 		E4FADA1D172CE2DF0052AD11 /* NSURL+BoxURLHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4FAD9FE172CE2DF0052AD11 /* NSURL+BoxURLHelperTests.m */; };
@@ -341,6 +341,54 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
+				2A0015E11834C49A00054040 /* NSString+BoxURLHelper.h in CopyFiles */,
+				2A0015E21834C49A00054040 /* NSURL+BoxURLHelper.h in CopyFiles */,
+				2A0015E31834C49A00054040 /* NSString+BoxAdditions.h in CopyFiles */,
+				2A0015E41834C49A00054040 /* UIImage+BoxAdditions.h in CopyFiles */,
+				2A0015E51834C49A00054040 /* BoxItem+BoxAdditions.h in CopyFiles */,
+				2A0015E61834C49A00054040 /* NSJSONSerialization+BoxAdditions.h in CopyFiles */,
+				2A0015E71834C49A00054040 /* BoxODRefreshControl.h in CopyFiles */,
+				2A0015E81834C49A00054040 /* BoxISO8601DateFormatter.h in CopyFiles */,
+				2A0015E91834C49A00054040 /* BoxFolderPickerHelper.h in CopyFiles */,
+				2A0015EA1834C49A00054040 /* BoxFolderPickerTableViewController.h in CopyFiles */,
+				2A0015EB1834C49A00054040 /* BoxFolderPickerViewController.h in CopyFiles */,
+				2A0015EC1834C49A00054040 /* BoxFolderPickerCell.h in CopyFiles */,
+				2A0015ED1834C49A00054040 /* BoxFolderPickerNavigationController.h in CopyFiles */,
+				2A0015EE1834C49A00054040 /* BoxCollection.h in CopyFiles */,
+				2A0015EF1834C49A00054040 /* BoxFile.h in CopyFiles */,
+				2A0015F01834C49A00054040 /* BoxFolder.h in CopyFiles */,
+				2A0015F11834C49A00054040 /* BoxItem.h in CopyFiles */,
+				2A0015F21834C49A00054040 /* BoxModel.h in CopyFiles */,
+				2A0015F31834C49A00054040 /* BoxUser.h in CopyFiles */,
+				2A0015F41834C49A00054040 /* BoxWebLink.h in CopyFiles */,
+				2A0015F51834C49A00054040 /* BoxModelComparators.h in CopyFiles */,
+				2A0015F61834C49A00054040 /* BoxAuthorizationViewController.h in CopyFiles */,
+				2A0015F71834C49A00054040 /* BoxOAuth2Session.h in CopyFiles */,
+				2A0015F81834C49A00054040 /* BoxSerialOAuth2Session.h in CopyFiles */,
+				2A0015F91834C49A00054040 /* BoxParallelOAuth2Session.h in CopyFiles */,
+				2A0015FA1834C49A00054040 /* BoxAPIAuthenticatedOperation.h in CopyFiles */,
+				2A0015FB1834C49A00054040 /* BoxAPIDataOperation.h in CopyFiles */,
+				2A0015FC1834C49A00054040 /* BoxAPIJSONOperation.h in CopyFiles */,
+				2A0015FD1834C49A00054040 /* BoxAPIMultipartToJSONOperation.h in CopyFiles */,
+				2A0015FE1834C49A00054040 /* BoxAPIOAuth2ToJSONOperation.h in CopyFiles */,
+				2A0015FF1834C49A00054040 /* BoxAPIOperation.h in CopyFiles */,
+				2A0016001834C49A00054040 /* BoxAPIQueueManager.h in CopyFiles */,
+				2A0016011834C49A00054040 /* BoxSerialAPIQueueManager.h in CopyFiles */,
+				2A0016021834C49A00054040 /* BoxParallelAPIQueueManager.h in CopyFiles */,
+				2A0016031834C49A00054040 /* BoxUsersRequestBuilder.h in CopyFiles */,
+				2A0016041834C49A00054040 /* BoxAPIRequestBuilder.h in CopyFiles */,
+				2A0016051834C49A00054040 /* BoxFilesRequestBuilder.h in CopyFiles */,
+				2A0016061834C49A00054040 /* BoxFoldersRequestBuilder.h in CopyFiles */,
+				2A0016071834C49A00054040 /* BoxItemsRequestBuilder.h in CopyFiles */,
+				2A0016081834C49A00054040 /* BoxSharedObjectBuilder.h in CopyFiles */,
+				2A0016091834C49A00054040 /* BoxUsersResourceManager.h in CopyFiles */,
+				2A00160A1834C49A00054040 /* BoxAPIResourceManager.h in CopyFiles */,
+				2A00160B1834C49A00054040 /* BoxFilesResourceManager.h in CopyFiles */,
+				2A00160C1834C49A00054040 /* BoxFoldersResourceManager.h in CopyFiles */,
+				2A00160D1834C49A00054040 /* BoxSDK.h in CopyFiles */,
+				2A00160E1834C49A00054040 /* BoxSDKErrors.h in CopyFiles */,
+				2A00160F1834C49A00054040 /* BoxSDKConstants.h in CopyFiles */,
+				2A0016101834C49A00054040 /* BoxLog.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1183,61 +1231,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		E44A95D016E221A500356ADA /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E44A95D116E221B400356ADA /* BoxSDKConstants.h in Headers */,
-				E44A95D216E221B400356ADA /* BoxSDK.h in Headers */,
-				E44A95D616E221B400356ADA /* BoxLog.h in Headers */,
-				E4F4693617264EBE000CAD86 /* BoxSDKErrors.h in Headers */,
-				E4FAD9C0172CE2C50052AD11 /* NSString+BoxURLHelper.h in Headers */,
-				E4FAD9C2172CE2C50052AD11 /* NSURL+BoxURLHelper.h in Headers */,
-				E4FAD9C4172CE2C50052AD11 /* BoxISO8601DateFormatter.h in Headers */,
-				E4FAD9C6172CE2C50052AD11 /* BoxCollection.h in Headers */,
-				E4FAD9C8172CE2C50052AD11 /* BoxFile.h in Headers */,
-				E4FAD9CA172CE2C50052AD11 /* BoxFolder.h in Headers */,
-				E4FAD9CC172CE2C50052AD11 /* BoxItem.h in Headers */,
-				E4FAD9CE172CE2C50052AD11 /* BoxModel.h in Headers */,
-				E4FAD9D0172CE2C50052AD11 /* BoxUser.h in Headers */,
-				E4FAD9D2172CE2C50052AD11 /* BoxWebLink.h in Headers */,
-				E4FAD9D4172CE2C50052AD11 /* BoxAuthorizationViewController.h in Headers */,
-				E4FAD9D6172CE2C50052AD11 /* BoxOAuth2Session.h in Headers */,
-				E4FAD9D8172CE2C50052AD11 /* BoxSerialOAuth2Session.h in Headers */,
-				E4FAD9DA172CE2C50052AD11 /* BoxAPIAuthenticatedOperation.h in Headers */,
-				E4FAD9DC172CE2C50052AD11 /* BoxAPIDataOperation.h in Headers */,
-				E4FAD9DE172CE2C50052AD11 /* BoxAPIJSONOperation.h in Headers */,
-				E4FAD9E0172CE2C50052AD11 /* BoxAPIMultipartToJSONOperation.h in Headers */,
-				E4FAD9E2172CE2C50052AD11 /* BoxAPIOAuth2ToJSONOperation.h in Headers */,
-				E4FAD9E4172CE2C50052AD11 /* BoxAPIOperation.h in Headers */,
-				E4FAD9E6172CE2C50052AD11 /* BoxAPIQueueManager.h in Headers */,
-				E4FAD9E8172CE2C50052AD11 /* BoxSerialAPIQueueManager.h in Headers */,
-				E4FAD9EA172CE2C50052AD11 /* BoxAPIRequestBuilder.h in Headers */,
-				E4FAD9EC172CE2C50052AD11 /* BoxFilesRequestBuilder.h in Headers */,
-				E4FAD9EE172CE2C50052AD11 /* BoxFoldersRequestBuilder.h in Headers */,
-				E4FAD9F0172CE2C50052AD11 /* BoxItemsRequestBuilder.h in Headers */,
-				E4FAD9F2172CE2C50052AD11 /* BoxSharedObjectBuilder.h in Headers */,
-				E4FAD9F4172CE2C50052AD11 /* BoxAPIResourceManager.h in Headers */,
-				C5152CFE17541B66007A5C0A /* BoxFolderPickerHelper.h in Headers */,
-				C5152D0017541B66007A5C0A /* BoxFolderPickerTableViewController.h in Headers */,
-				C5152D0217541B66007A5C0A /* BoxFolderPickerViewController.h in Headers */,
-				E4FAD9F6172CE2C50052AD11 /* BoxFilesResourceManager.h in Headers */,
-				E4FAD9F8172CE2C50052AD11 /* BoxFoldersResourceManager.h in Headers */,
-				E4CA6F56173F13C10089680F /* BoxParallelAPIQueueManager.h in Headers */,
-				E4CA6F5E173F1C750089680F /* BoxParallelOAuth2Session.h in Headers */,
-				C54BBF6D17584F9300F5DAD8 /* BoxFolderPickerCell.h in Headers */,
-				E4081E331758832C00F6D6AA /* BoxFolderPickerNavigationController.h in Headers */,
-				C5C11A3F175DA92E0001EC88 /* NSString+BoxAdditions.h in Headers */,
-				C5C11A44175DACCE0001EC88 /* UIImage+BoxAdditions.h in Headers */,
-				C58BC262175EDD670071BF37 /* BoxItem+BoxAdditions.h in Headers */,
-				C58BC268175EDF7C0071BF37 /* BoxODRefreshControl.h in Headers */,
-				AF6E06A817AE66AF0039F17D /* BoxModelComparators.h in Headers */,
-				AF153B1317C346D6008D636C /* NSJSONSerialization+BoxAdditions.h in Headers */,
-				9400B0BB17FB8BE00077D4E7 /* BoxUsersRequestBuilder.h in Headers */,
-				9400B0BF17FB8BEA0077D4E7 /* BoxUsersResourceManager.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		F0E5E2E417A78AEF00153646 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -1313,8 +1306,6 @@
 				E470433716D41DC500FED29A /* Sources */,
 				E470433816D41DC500FED29A /* Frameworks */,
 				E470433916D41DC500FED29A /* CopyFiles */,
-				E44A95D016E221A500356ADA /* Headers */,
-				E4D8DAF017D008E3003DC44E /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1511,22 +1502,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		E4D8DAF017D008E3003DC44E /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "echo \"Symlinkling ${TARGET_BUILD_DIR}/include/BoxSDK to ${BUILT_PRODUCTS_DIR}/BoxSDK\"\n\nln -fs \"${TARGET_BUILD_DIR}/include/BoxSDK\" \"${BUILT_PRODUCTS_DIR}/BoxSDK\"";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E4081D891758728900F6D6AA /* Sources */ = {
