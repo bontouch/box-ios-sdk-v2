@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		2A0016111834C70900054040 /* BoxUniversalLibrary */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 2A0016121834C70900054040 /* Build configuration list for PBXAggregateTarget "BoxUniversalLibrary" */;
+			buildPhases = (
+				2A0016151834C71A00054040 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = BoxUniversalLibrary;
+			productName = BoxUniversalLibrary;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		2A0015E11834C49A00054040 /* NSString+BoxURLHelper.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4FAD97C172CE2C50052AD11 /* NSString+BoxURLHelper.h */; };
 		2A0015E21834C49A00054040 /* NSURL+BoxURLHelper.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4FAD97E172CE2C50052AD11 /* NSURL+BoxURLHelper.h */; };
@@ -1397,6 +1411,7 @@
 				E4081D8C1758728900F6D6AA /* BoxSDKResources */,
 				F0E5E2E617A78AEF00153646 /* BoxCocoaSDK */,
 				F0E5E2FC17A78AEF00153646 /* BoxCocoaSDKTests */,
+				2A0016111834C70900054040 /* BoxUniversalLibrary */,
 			);
 		};
 /* End PBXProject section */
@@ -1502,6 +1517,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A0016151834C71A00054040 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+				"${BUILD_DIR}/${CONFIGURATION}-universal/lib${PROJECT_NAME}.a",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# define output folder environment variable\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n \n# Step 1. Build Device and Simulator versions\nxcodebuild -target BoxSDK ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\nxcodebuild -target BoxSDK -configuration ${CONFIGURATION} -sdk iphonesimulator -arch i386 BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\n \n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n \n# Step 2. Create universal binary file using lipo\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/lib${PROJECT_NAME}.a\"\n \n# Last touch. copy the header files. Just for convenience\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/include\" \"${UNIVERSAL_OUTPUTFOLDER}/\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E4081D891758728900F6D6AA /* Sources */ = {
@@ -1709,6 +1741,20 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		2A0016131834C70900054040 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2A0016141834C70900054040 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		E4081D981758728900F6D6AA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1970,6 +2016,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2A0016121834C70900054040 /* Build configuration list for PBXAggregateTarget "BoxUniversalLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A0016131834C70900054040 /* Debug */,
+				2A0016141834C70900054040 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		E4081D971758728900F6D6AA /* Build configuration list for PBXNativeTarget "BoxSDKResources" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
